@@ -1,0 +1,352 @@
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #b0b0b0;
+    overflow: hidden;
+}
+
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 24s linear infinite;
+}
+
+.background li:nth-child(0) {
+    left: 21%;
+    width: 116px;
+    height: 116px;
+    bottom: -116px;
+    animation-delay: 1s;
+}
+
+.background li:nth-child(1) {
+    left: 32%;
+    width: 148px;
+    height: 148px;
+    bottom: -148px;
+    animation-delay: 4s;
+}
+
+.background li:nth-child(2) {
+    left: 18%;
+    width: 163px;
+    height: 163px;
+    bottom: -163px;
+    animation-delay: 6s;
+}
+
+.background li:nth-child(3) {
+    left: 61%;
+    width: 131px;
+    height: 131px;
+    bottom: -131px;
+    animation-delay: 3s;
+}
+
+.background li:nth-child(4) {
+    left: 18%;
+    width: 136px;
+    height: 136px;
+    bottom: -136px;
+    animation-delay: 18s;
+}
+
+.background li:nth-child(5) {
+    left: 45%;
+    width: 109px;
+    height: 109px;
+    bottom: -109px;
+    animation-delay: 23s;
+}
+
+.background li:nth-child(6) {
+    left: 76%;
+    width: 119px;
+    height: 119px;
+    bottom: -119px;
+    animation-delay: 7s;
+}
+
+.background li:nth-child(7) {
+    left: 58%;
+    width: 100px;
+    height: 100px;
+    bottom: -100px;
+    animation-delay: 23s;
+}
+
+.background li:nth-child(8) {
+    left: 84%;
+    width: 114px;
+    height: 114px;
+    bottom: -114px;
+    animation-delay: 38s;
+}
+
+.background li:nth-child(9) {
+    left: 28%;
+    width: 163px;
+    height: 163px;
+    bottom: -163px;
+    animation-delay: 11s;
+}
+
+.background li:nth-child(10) {
+    left: 68%;
+    width: 162px;
+    height: 162px;
+    bottom: -162px;
+    animation-delay: 25s;
+}
+
+.background li:nth-child(11) {
+    left: 30%;
+    width: 141px;
+    height: 141px;
+    bottom: -141px;
+    animation-delay: 1s;
+}
+
+.background li:nth-child(12) {
+    left: 75%;
+    width: 113px;
+    height: 113px;
+    bottom: -113px;
+    animation-delay: 48s;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translatey(380%);
+    }
+
+    to {
+        transform: translatey(0%);
+    }
+}
+
+@keyframes slide-in-1 {
+    from {
+        transform: translateX(-200%) rotate(-720deg);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-in-2 {
+    from {
+        transform: translateX(320%) rotate(720deg);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes flip-vertical-fwd {
+    0% {
+        -webkit-transform: translateZ(0) rotateY(0);
+        transform: translateZ(0) rotateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateZ(160px) rotateY(180deg);
+        transform: translateZ(160px) rotateY(180deg);
+    }
+}
+
+@keyframes flip-vertical-fwd {
+    0% {
+        -webkit-transform: translateZ(0) rotateY(0);
+        transform: translateZ(0) rotateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateZ(160px) rotateY(180deg);
+        transform: translateZ(160px) rotateY(180deg);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+}
+
+.image-1 {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    z-index: 4;
+    top: 200px;
+    left: 200px;
+    box-shadow: 11px 10px 10px rgba(117, 111, 117, 0.67);
+    border-radius: 46% 54% 70% 30% / 30% 44% 56% 70%;
+    animation: flip-vertical-fwd 3s ease-in-out infinite alternate both;
+    background-image: url(image/albert_enstein_3.jpg);
+    transition: 2s;
+}
+
+.image-1:hover {
+    background-image: url(image/albert_enstein_4.jpg);
+    border-radius: 43% 57% 29% 71% / 53% 48% 52% 47%;
+}
+
+.image-2 {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    z-index: 4;
+    top: 200px;
+    right: 200px;
+    box-shadow: 11px 10px 10px rgba(117, 111, 117, 0.67);
+    border-radius: 43% 57% 29% 71% / 53% 48% 52% 47%;
+    animation: flip-vertical-fwd 3s ease-in-out infinite alternate-reverse both;
+    background-image: url(image/albert_enstein_4.jpg);
+    transition: 2s;
+}
+
+.image-2:hover {
+    background-image: url(image/albert_enstein_3.jpg);
+    border-radius: 46% 54% 70% 30% / 30% 44% 56% 70%;
+}
+
+body {
+    background-color: #717272;
+    overflow: hidden;
+}
+
+.judul_1 {
+    width: 500px;
+    height: 100px;
+    /* background-color: aqua; */
+    top: 30px;
+    left: 450px;
+    animation: slide-in-1 3s cubic-bezier(0.24, -0.15, 0.9, 1.65);
+    position: absolute;
+    z-index: 3;
+    transition: 2s;
+}
+
+.judul_1:hover {
+    transform: scale(1.4);
+}
+
+.judul_1 h1 {
+    font-family: "Syne Mono", monospace;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 6px 6px 6px rgba(66, 68, 90, 1);
+    transition: 2s;
+}
+
+h1:hover {
+    color: #1d1d1d;
+}
+
+.judul_2 {
+    width: 250px;
+    height: 100px;
+    /* background-color: aqua; */
+    position: absolute;
+    z-index: 4;
+    top: 150px;
+    left: 575px;
+    animation: slide-in-2 3s cubic-bezier(0.24, -0.15, 0.9, 1.65);
+    transition: 2s;
+}
+
+.judul_2:hover {
+    transform: scale(1.4);
+}
+
+.judul_2 h4 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    font-family: "poppins";
+    text-shadow: 6px 6px 6px rgba(66, 68, 90, 1);
+    transition: 2s;
+}
+
+h4:hover {
+    color: #1d1d1d;
+}
+
+.judul_2 h4::before {
+    content: '"';
+}
+
+.judul_2 h4::after {
+    content: '"';
+}
+
+button {
+    font-family: monospace;
+    background-color: rgba(250, 249, 249, 0.3);
+    display: inline-block;
+    color: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    position: absolute;
+    top: 450px;
+    left: 645px;
+    height: 45px;
+    transition: 0.3s;
+    animation: slide-in 3s cubic-bezier(0.24, -0.15, 0.9, 1.65);
+}
+
+button:hover {
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+}
